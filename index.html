@@ -16,7 +16,9 @@
 <body>
 
   <div class="container">
-    <h1>Park Search</h1>
+    <div class="header">
+      <h1>National Park Search Tool</h1>
+    </div>
     <form action="" class="js-form">
       <div class="form-group">
         <label>Enter the 2 letter State Abbreviation. <br>
@@ -29,15 +31,23 @@
         <input type="number" class='form-control' id="numResults" placeholder='10' required>
       </div>
       <input type="submit" class="btn btn-primary" value="SHOW ME">
+      <button onClick="window.location.reload();" class="btn btn-success">Refresh Page</button>
     </form>
+
 
     <p id="js-error-message" class="error-message"></p>
     <section id="results" class="hidden">
-      <h2>Search results</h2>
+      <h2 class="results-header">Search results</h2>
       <ul class="results-list">
       </ul>
     </section>
   </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Copyright &copy 2021 DVLPRDAD. All Rights Reserved.</p>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 
